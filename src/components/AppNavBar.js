@@ -12,7 +12,7 @@ export default function AppNavBar() {
   return (
     <Navbar expand="lg" className="bg-success">
       <Container>
-        <Navbar.Brand href="/" className="fw-bold text-light">Blog App</Navbar.Brand>
+        <Nav.Link className="text-light fw-semibold" as={NavLink} to="/" end>Blog App</Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
