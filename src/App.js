@@ -26,6 +26,7 @@ const [user, setUser] = useState({
 
   useEffect(() => {
     fetch(`https://blogappapi-d0pa.onrender.com/users/details`, {
+      method: 'GET',
       headers: {
         Authorization: `Bearer ${ localStorage.getItem('token') }`
       }
